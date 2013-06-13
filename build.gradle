@@ -16,6 +16,7 @@ dependencies {
 
 	String os = System.getProperty("os.name").toLowerCase();
 	compile fileTree( dir: 'libs', includes: ['*.jar'], excludes: [ '**/java-fx-1_3_1' ] )
+	
 	if( os.indexOf( "win" ) >= 0 )
 		compile files( 'libs/java-fx-1_3_1/javafx-rt-windows-i586-1_3_1.jar' )
 	else if( os.indexOf( "linux" ) >= 0 )
@@ -29,7 +30,7 @@ task wrapper(type: Wrapper) {
 }
 
 javafx {
-    mainClass = 'de.mfo.jsurfer.Main'
+    mainClass = 'ConfigFileReader'
 
     // deplpy/info attributes
     category = 'Visualization'
@@ -47,6 +48,8 @@ javafx {
         volume = shortcut
         setup = 'zitrus-32.bmp'
     }
+    
+    installSystemWide = true
 }
 
 jfxDeploy {
