@@ -5,7 +5,7 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.Map;
 
-public class ConfigFileReader {
+public class SURFER {
 
 	public static void applyUserSettings()
 		throws Exception
@@ -17,7 +17,7 @@ public class ConfigFileReader {
         	throw new IllegalStateException("user.home==null");
     	}
     	File home = new File(userHome);
-    	File settingsFile = new File(home, ".fxsurfer");
+    	File settingsFile = new File(home, ".jfxsurfer");
     	if(!settingsFile.exists()) {
         	if(!settingsFile.createNewFile()) {
             	throw new IllegalStateException(settingsFile.toString());
