@@ -11,7 +11,8 @@ repositories {
 }
 
 dependencies {
-    compile group: 'de.mfo.jsurf', name: 'jsurf', version: '0.0.737'
+    compile group: 'de.mfo.jsurf', name: 'jsurf', version: '0.1.0'
+    compile group: 'javax', name: 'vecmath', version: '1.5.2'
     compile group: 'org.swinglabs', name: 'pdf-renderer', version: '1.0.5'
 
 	String os = System.getProperty("os.name").toLowerCase();
@@ -30,7 +31,7 @@ task wrapper(type: Wrapper) {
 }
 
 javafx {
-    mainClass = 'ConfigFileReader'
+    mainClass = 'SURFER'
 
     // deplpy/info attributes
     category = 'Visualization'
@@ -39,7 +40,7 @@ javafx {
     licenseType = 'The Apache Software License, Version 2.0'
     vendor = 'Mathematisches Forschungsinstitut Oberwolfach'
 
-	jvmArgs = ['-Xmx1024m', '-server']
+	jvmArgs = ['-Xmx1024m', '-server', '-Dapple.awt.fakefullscreen=true' ]
 
     icons {
         shortcut = [
