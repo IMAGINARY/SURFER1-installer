@@ -1,5 +1,5 @@
 group = 'de.mfo.surfer'
-version = '1.0.0'
+version = '1.0.2'
 
 apply from: 'http://repository-javafx-gradle-plugin.forge.cloudbees.com/snapshot/0.5.0-SNAPSHOT/javafx.plugin'
 
