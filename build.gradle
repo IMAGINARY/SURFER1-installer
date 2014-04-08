@@ -1,7 +1,8 @@
 group = 'de.mfo.surfer'
-version = '1.0.2'
+version = '1.0.3'
 
-apply from: 'http://repository-javafx-gradle-plugin.forge.cloudbees.com/snapshot/0.5.0-SNAPSHOT/javafx.plugin'
+//apply from: 'http://dl.bintray.com/content/shemnon/javafx-gradle/0.4.0/javafx.plugin'
+apply from: 'http://repository-javafx-gradle-plugin.forge.cloudbees.com/snapshot/0.3.0-SNAPSHOT/javafx.plugin'
 
 repositories {
     mavenCentral()
@@ -13,7 +14,9 @@ repositories {
 dependencies {
     compile group: 'de.mfo.jsurf', name: 'jsurf', version: '0.1.0'
     compile group: 'javax', name: 'vecmath', version: '1.5.2'
-    compile group: 'org.swinglabs', name: 'pdf-renderer', version: '1.0.5'
+    compile files( 'libs/jpedal_lgpl.jar' )
+    compile files( 'libs/cid.jar' )
+
 
 	String os = System.getProperty("os.name").toLowerCase();
 	compile fileTree( dir: 'libs', includes: ['*.jar'], excludes: [ '**/java-fx-1_3_1' ] )
