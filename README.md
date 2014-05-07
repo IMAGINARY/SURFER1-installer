@@ -7,7 +7,7 @@ You need a recent Oracle Java version (1.7+).
 
 On Linux/Unix/Mac systems build the setup for the specific system using
 ```
-./gradlew jfxDeploy
+./gradlew clean jfxDeploy
 ```
 
 On Windows you can use
