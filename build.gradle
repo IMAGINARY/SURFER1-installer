@@ -1,5 +1,5 @@
 group = 'de.mfo.surfer'
-version = '1.0.3'
+version = '1.1.0'
 
 //apply from: 'http://dl.bintray.com/content/shemnon/javafx-gradle/0.4.0/javafx.plugin'
 apply from: 'http://repository-javafx-gradle-plugin.forge.cloudbees.com/snapshot/0.3.0-SNAPSHOT/javafx.plugin'
@@ -43,7 +43,7 @@ javafx {
     licenseType = 'The Apache Software License, Version 2.0'
     vendor = 'Mathematisches Forschungsinstitut Oberwolfach'
 
-	jvmArgs = ['-Xmx1024m', '-server', '-Dapple.awt.fakefullscreen=true' ]
+	jvmArgs = ['-Xmx1152m', '-server', '-Dapple.awt.fakefullscreen=true' ]
 
     icons {
         shortcut = [
