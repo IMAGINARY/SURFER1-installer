@@ -40,7 +40,7 @@ de/mfo/jsurfer/gallery/record_en.pdf
 de/mfo/jsurfer/gallery/tutorial_en.pdf
 ```
 
-Since `.jar` is actually a ZIP file with meta data, you can just exchange the files using the ZIP compression tool of your choice. Before you start, copy the file `libs/SurferLocalization_en.jar` to `libs/SurferLocalization_XX.jar` where `XX` is [thetwo-letter IETF BCP 47 language tag](http://rishida.net/utils/subtags/) of the language you are localizing for.
+Since `.jar` is actually a ZIP file with meta data, you can just exchange the files using the ZIP compression tool of your choice. Before you start, copy the file `libs/SurferLocalization_en.jar` to `libs/SurferLocalization_XX.jar` where `XX` is the [two-letter IETF BCP 47 language tag](http://rishida.net/utils/subtags/) of the language you are localizing for.
 
 ### Impressum_XX.png
 
