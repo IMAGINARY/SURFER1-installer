@@ -50,6 +50,7 @@ This image is shown in SURFER when you click on the copyright button. It is the 
 
 This files contains localization strings for several labels of the user interface of SURFER. The English file looks like this:
 ```
+language=English
 variables=Variables
 arithmeticOperations=Arithmetic operations
 parameters=Parameters
@@ -59,7 +60,7 @@ colors=Colours
 zoom=Zoom
 imprintFile=Impressum_en.png
 ```
-If you translate to a language which uses non-ascii characters (which are most Non-English languages), you need to convert your translation into the approriate format using the `native2ascii` tool which is part of the Java Development Kit. You can also use this [online tool](http://native2ascii.net/) to simplify the process.
+Note that `language` must equal the name of the language you are translating to written in that language (i.e. for German it would be `Deutsch`, for Russian it would be `Русский` etc.). If you translate to a language which uses non-ascii characters (which are most Non-English languages), you need to convert your translation into the approriate format using the `native2ascii` tool which is part of the Java Development Kit. You can also use this [online tool](http://native2ascii.net/) to simplify the process.
 
 If you did not translate the imprint file, you should delete the line `imprintFile=Impressum_en.png`. Otherwise, replace `imprintFile=Impressum_en.png` with `imprintFile=Impressum_XX.png`.
 
