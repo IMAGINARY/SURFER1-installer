@@ -48,7 +48,7 @@ This image is shown in SURFER when you click on the copyright button. It is the 
 
 ### MessagesBundle_XX.properties
 
-This files contains localization strings for several labels of the user interface of SURFER. The English file looks like this:
+This file contains localization strings for several labels of the user interface of SURFER. The English file looks like this:
 ```
 language=English
 variables=Variables
