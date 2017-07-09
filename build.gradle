@@ -43,6 +43,7 @@ javafx {
 	jvmArgs = ['-Xmx1024m', '-server', '-Dapple.awt.fakefullscreen=true', "-D${project.group}.version=$project.version" ]
 
     icons {
+        // BUG: Icon path resolution sometimes only works properly for absolute paths
         shortcut = [
                 'zitrus-256.png'
         ]
