@@ -1,5 +1,5 @@
 group = 'de.mfo.surfer'
-version = '1.5.0'
+version = '1.6.0'
 
 //apply from: 'http://dl.bintray.com/content/shemnon/javafx-gradle/0.4.0/javafx.plugin'
 apply from: 'http://repository-javafx-gradle-plugin.forge.cloudbees.com/snapshot/0.3.0-SNAPSHOT/javafx.plugin'
@@ -17,7 +17,7 @@ dependencies {
 
 	String os = System.getProperty("os.name").toLowerCase();
 	compile fileTree( dir: 'libs', includes: ['*.jar'], excludes: [ '**/java-fx-1_3_1' ] )
-	
+
 	if( os.indexOf( "win" ) >= 0 )
 		compile files( 'libs/java-fx-1_3_1/javafx-rt-windows-i586-1_3_1.jar' )
 	else if( os.indexOf( "linux" ) >= 0 )
@@ -50,7 +50,7 @@ javafx {
         volume = shortcut
         setup = 'zitrus-32.bmp'
     }
-    
+
     installSystemWide = true
 }
 
