@@ -1,8 +1,7 @@
 group = 'de.mfo.surfer'
 version = '1.6.0'
 
-//apply from: 'http://dl.bintray.com/content/shemnon/javafx-gradle/0.4.0/javafx.plugin'
-apply from: 'http://repository-javafx-gradle-plugin.forge.cloudbees.com/snapshot/0.3.0-SNAPSHOT/javafx.plugin'
+apply from: 'http://dl.bintray.com/content/shemnon/javafx-gradle/0.3.0/javafx.plugin'
 
 repositories {
     mavenCentral()
